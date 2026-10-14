@@ -1,0 +1,29 @@
+{
+  "name": "juno-whatsapp-automation",
+  "version": "1.0.0",
+  "description": "Pure WhatsApp Business Automation Bot for JUNO Kitchen & Co. (Boduppal, Hyderabad)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "qr": "node bot-qr.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "automation",
+    "restaurant",
+    "bot",
+    "juno"
+  ],
+  "author": "JUNO Kitchen & Co.",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pino": "^10.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

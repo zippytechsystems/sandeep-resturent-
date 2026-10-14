@@ -1,0 +1,496 @@
+/* ==========================================================================
+   REDDY'S DAILY TREATS - LUXURY FIVE-STAR DESIGN SYSTEM
+   Palette: Midnight Black (#0B0B1A, #1A1A2E), Champagne Gold (#D4AF37, #E8C872),
+   Ivory Text (#FAF6EE), Spicy Orange Accent (#E8975A)
+   Fonts: Playfair Display (Headings) & Poppins (Body)
+   ========================================================================== */
+
+:root {
+  --color-bg-base: #0B0B1A;
+  --color-bg-alt: #121226;
+  --color-bg-surface: #1A1A2E;
+  --color-bg-card: rgba(26, 26, 46, 0.85);
+  --color-gold: #D4AF37;
+  --color-gold-light: #E8C872;
+  --color-gold-bright: #FFF0BD;
+  --color-gold-dark: #8C6A18;
+  --color-ivory: #FAF6EE;
+  --color-ivory-dim: #DCD6C8;
+  --color-muted: #8E8A99;
+  --color-accent: #E8975A;
+  --color-veg: #10B981;
+  --color-nonveg: #EF4444;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --gold-gradient: linear-gradient(135deg, #E8C872 0%, #D4AF37 50%, #996515 100%);
+  --gold-foil: linear-gradient(90deg, #D4AF37 0%, #FFF3B0 30%, #D4AF37 60%, #AA820A 100%);
+  --gold-glow: 0 0 25px rgba(212, 175, 55, 0.25);
+  --glass-border: 1px solid rgba(212, 175, 55, 0.18);
+  --glass-border-hover: 1px solid rgba(212, 175, 55, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-base);
+  color: var(--color-ivory);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-ivory);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Subtle luxury grain background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.04) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 80%, rgba(232, 151, 90, 0.03) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Typography Helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-gold-light {
+  color: var(--color-gold-light);
+}
+
+.text-ivory {
+  color: var(--color-ivory);
+}
+
+.text-gold-gradient {
+  background: var(--gold-foil);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Gold Dividers */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.6) 50%, transparent 100%);
+  border: none;
+  margin: 1.5rem 0;
+}
+
+.gold-divider-thick {
+  height: 2px;
+  background: var(--gold-gradient);
+  border: none;
+}
+
+/* Glassmorphism Surface */
+.glass-panel {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: var(--glass-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border: var(--glass-border-hover);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Luxury Gold Button */
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #0B0B1A;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+  border: 1px solid rgba(255, 240, 189, 0.5);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-gold:hover {
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6);
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+/* Glass Gold Border Button */
+.btn-glass-gold {
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(8px);
+  color: var(--color-ivory);
+  font-weight: 500;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-glass-gold:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--color-gold-light);
+  color: var(--color-gold-light);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Hero Zoom Animation */
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 30s ease-in-out infinite alternate;
+}
+
+/* Pulse animation for live status badge */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.pulse-active {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Shimmer animation for Best Value ribbon */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-badge {
+  background: linear-gradient(90deg, #996515 0%, #E8C872 50%, #996515 100%);
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite linear;
+}
+
+/* Diet Dot Indicators */
+.veg-dot-box {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--color-veg);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(16, 185, 129, 0.1);
+  flex-shrink: 0;
+}
+
+.veg-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-veg);
+  border-radius: 50%;
+}
+
+.nonveg-dot-box {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--color-nonveg);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239, 68, 68, 0.1);
+  flex-shrink: 0;
+}
+
+.nonveg-triangle {
+  width: 0;
+  height: 0;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-bottom: 8px solid var(--color-nonveg);
+}
+
+/* Portion Switcher Pill */
+.portion-switch {
+  display: inline-flex;
+  background: rgba(11, 11, 26, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+  padding: 2px;
+}
+
+.portion-btn {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: none;
+  background: transparent;
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.portion-btn.active {
+  background: var(--gold-gradient);
+  color: #0B0B1A;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Floating WhatsApp & Call Buttons */
+.floating-actions {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.floating-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.btn-whatsapp-floating {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+
+.btn-call-floating {
+  background: linear-gradient(135deg, #D4AF37, #996515);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);
+}
+
+/* Cart Drawer Styling */
+.cart-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 11, 26, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cart-drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
+  background: #111122;
+  border-left: 1px solid rgba(212, 175, 55, 0.25);
+  z-index: 1001;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.7);
+}
+
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  background: rgba(26, 26, 46, 0.95);
+  border: 1px solid var(--color-gold);
+  color: var(--color-ivory);
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), var(--gold-glow);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 12, 0.94);
+  backdrop-filter: blur(16px);
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox-modal.open {
+  display: flex;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23233D;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
+}
+
+/* WhatsApp Bot Simulator Modal */
+.whatsapp-bot-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 12, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 3500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.whatsapp-bot-modal.open {
+  display: flex;
+}
+
+.whatsapp-chat-box {
+  background: #0b141a;
+  background-image: radial-gradient(circle at center, rgba(32, 44, 51, 0.4) 0%, transparent 70%);
+}
+
+.wa-msg-bot {
+  background: #202c33;
+  color: #e9edef;
+  border-radius: 0 16px 16px 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.wa-msg-user {
+  background: #005c4b;
+  color: #e9edef;
+  border-radius: 16px 0 16px 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.wa-chip {
+  background: #1f2c34;
+  border: 1px solid #00a884;
+  color: #00a884;
+  transition: all 0.2s ease;
+}
+
+.wa-chip:hover {
+  background: #00a884;
+  color: #111b21;
+}

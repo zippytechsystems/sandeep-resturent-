@@ -1,0 +1,330 @@
+{
+  "restaurant": {
+    "name": "JUNO Kitchen & Co.",
+    "subtitle": "Biryani • Fast Food • Juices • Mocktails • Shakes",
+    "tagline": "Good Food Good Vibes",
+    "phone": "+91 90145 61737",
+    "whatsapp": "+919014561737",
+    "location": "Canara Nagar, Boduppal, Hyderabad, Telangana 500092",
+    "mapsUrl": "https://maps.google.com/?q=Canara+Nagar+Boduppal+Hyderabad",
+    "timings": "11:30 AM - 11:30 PM (Open All 7 Days)",
+    "currency": "₹"
+  },
+  "categories": [
+    { "id": "biryani", "name": "Biryani's", "icon": "utensils" },
+    { "id": "starters", "name": "Starters", "icon": "flame" },
+    { "id": "noodles", "name": "Noodles", "icon": "soup" },
+    { "id": "rice", "name": "Rice", "icon": "wheat" },
+    { "id": "combos", "name": "Combos", "icon": "gift" },
+    { "id": "momos", "name": "Momo's", "icon": "sparkles", "comingSoon": true },
+    { "id": "milkshakes", "name": "Milkshakes", "icon": "cup-soda", "comingSoon": true },
+    { "id": "cold-drinks", "name": "Cold Drinks", "icon": "glass-water", "comingSoon": true }
+  ],
+  "items": [
+    {
+      "id": "chicken-biryani",
+      "name": "Chicken Biryani",
+      "category": "biryani",
+      "veg": false,
+      "signature": true,
+      "description": "Fragrant long-grain basmati with succulent spiced chicken cooked in authentic Hyderabadi dum style.",
+      "image": "/images/menu/chicken-biryani.jpg",
+      "prices": { "S": 130, "F": 220 }
+    },
+    {
+      "id": "family-pack-biryani",
+      "name": "Family Pack Biryani",
+      "category": "biryani",
+      "veg": false,
+      "signature": false,
+      "description": "Hearty copper handi biryani feast for 3-4 people, served with creamy raita and spicy mirchi ka salan.",
+      "image": "/images/menu/family-pack-biryani.jpg",
+      "prices": { "F": 460 }
+    },
+    {
+      "id": "jumbo-pack-biryani",
+      "name": "Jumbo Pack Biryani",
+      "category": "biryani",
+      "veg": false,
+      "signature": false,
+      "description": "Grand feast portion loaded with tender chicken pieces, boiled eggs, and royal saffron aroma for large gatherings.",
+      "image": "/images/menu/jumbo-pack-biryani.jpg",
+      "prices": { "F": 690 }
+    },
+    {
+      "id": "fried-piece-biryani",
+      "name": "Fried Piece Biryani",
+      "category": "biryani",
+      "veg": false,
+      "signature": true,
+      "description": "Classic fragrant dum rice topped with crispy golden fried chicken pieces, caramelized onions and lemon.",
+      "image": "/images/menu/fried-piece-biryani.jpg",
+      "prices": { "S": 140, "F": 240 }
+    },
+    {
+      "id": "veg-manchurian",
+      "name": "Veg Manchurian",
+      "category": "starters",
+      "veg": true,
+      "signature": false,
+      "description": "Crispy vegetable balls tossed in rich dark soy-garlic gravy with fresh scallion garnish.",
+      "image": "/images/menu/veg-manchurian.jpg",
+      "prices": { "S": 70, "F": 120 }
+    },
+    {
+      "id": "chicken-lollipop",
+      "name": "Chicken Lollipop",
+      "category": "starters",
+      "veg": false,
+      "signature": true,
+      "description": "Crisp frenched chicken drumettes coated in fiery Indo-Chinese glaze with delicate scallions.",
+      "image": "/images/menu/chicken-lollipop.jpg",
+      "prices": { "S": 120 }
+    },
+    {
+      "id": "chicken-65",
+      "name": "Chicken 65",
+      "category": "starters",
+      "veg": false,
+      "signature": true,
+      "description": "Iconic Hyderabadi crispy spiced red chicken tossed with curry leaves, slit green chillies, and lemon.",
+      "image": "/images/menu/chicken-65.jpg",
+      "prices": { "S": 130, "F": 220 }
+    },
+    {
+      "id": "chicken-manchurian",
+      "name": "Chicken Manchurian",
+      "category": "starters",
+      "veg": false,
+      "signature": false,
+      "description": "Tender chicken chunks tossed in a glossy savoury garlic, ginger, and soy sauce glaze.",
+      "image": "/images/menu/chicken-manchurian.jpg",
+      "prices": { "S": 120, "F": 200 }
+    },
+    {
+      "id": "chilli-chicken",
+      "name": "Chilli Chicken",
+      "category": "starters",
+      "veg": false,
+      "signature": false,
+      "description": "Classic wok-tossed spicy chicken with crunchy bell peppers, diced onions, and green chillies.",
+      "image": "/images/menu/chilli-chicken.jpg",
+      "prices": { "S": 130, "F": 220 }
+    },
+    {
+      "id": "ginger-chicken",
+      "name": "Ginger Chicken",
+      "category": "starters",
+      "veg": false,
+      "signature": false,
+      "description": "Golden crispy chicken pieces infused with julienned fresh ginger, aromatic curry leaves, and spices.",
+      "image": "/images/menu/ginger-chicken.jpg",
+      "prices": { "S": 130, "F": 220 }
+    },
+    {
+      "id": "veg-noodles",
+      "name": "Veg Noodles",
+      "category": "noodles",
+      "veg": true,
+      "signature": false,
+      "description": "Classic Hakka noodles tossed with crunchy julienned vegetables and subtle oriental seasonings.",
+      "image": "/images/menu/veg-noodles.jpg",
+      "prices": { "S": 70, "F": 120 }
+    },
+    {
+      "id": "veg-manchurian-noodles",
+      "name": "Veg Manchurian Noodles",
+      "category": "noodles",
+      "veg": true,
+      "signature": false,
+      "description": "Wok noodles paired with crispy veg manchurian dumplings bathed in rich garlic soy gravy.",
+      "image": "/images/menu/veg-manchurian-noodles.jpg",
+      "prices": { "S": 80, "F": 130 }
+    },
+    {
+      "id": "veg-schezwan-noodles",
+      "name": "Veg Schezwan Noodles",
+      "category": "noodles",
+      "veg": true,
+      "signature": false,
+      "description": "Fiery stir-fried noodles seasoned with house-made Schezwan sauce, red chilli flakes, and spring onion.",
+      "image": "/images/menu/veg-schezwan-noodles.jpg",
+      "prices": { "S": 90, "F": 140 }
+    },
+    {
+      "id": "egg-noodles",
+      "name": "Egg Noodles",
+      "category": "noodles",
+      "veg": false,
+      "signature": false,
+      "description": "Delicate wheat noodles stir-fried with fluffy scrambled eggs, crisp veggies, and crushed pepper.",
+      "image": "/images/menu/egg-noodles.jpg",
+      "prices": { "S": 80, "F": 130 }
+    },
+    {
+      "id": "chicken-noodles",
+      "name": "Chicken Noodles",
+      "category": "noodles",
+      "veg": false,
+      "signature": false,
+      "description": "Savory wok noodles loaded with tender chicken slices, fresh vegetables, and savory wok aroma.",
+      "image": "/images/menu/chicken-noodles.jpg",
+      "prices": { "S": 90, "F": 159 }
+    },
+    {
+      "id": "chicken-schezwan-noodles",
+      "name": "Chicken Schezwan Noodles",
+      "category": "noodles",
+      "veg": false,
+      "signature": false,
+      "description": "Spicy wok noodles packed with chicken strips tossed in spicy red chilli garlic Schezwan blend.",
+      "image": "/images/menu/chicken-schezwan-noodles.jpg",
+      "prices": { "S": 100, "F": 169 }
+    },
+    {
+      "id": "veg-fried-rice",
+      "name": "Veg Fried Rice",
+      "category": "rice",
+      "veg": true,
+      "signature": false,
+      "description": "Aromatic basmati rice wok-tossed with finely diced carrots, beans, and capsicum.",
+      "image": "/images/menu/veg-fried-rice.jpg",
+      "prices": { "S": 70, "F": 120 }
+    },
+    {
+      "id": "jeera-rice",
+      "name": "Jeera Rice",
+      "category": "rice",
+      "veg": true,
+      "signature": false,
+      "description": "Fluffy basmati tempered with toasted cumin seeds, pure desi ghee, and fresh coriander.",
+      "image": "/images/menu/jeera-rice.jpg",
+      "prices": { "S": 70, "F": 120 }
+    },
+    {
+      "id": "veg-manchurian-rice",
+      "name": "Veg Manchurian Rice",
+      "category": "rice",
+      "veg": true,
+      "signature": false,
+      "description": "Stir-fried veg rice served alongside savory veg manchurian dumplings in lush gravy.",
+      "image": "/images/menu/veg-manchurian-rice.jpg",
+      "prices": { "S": 80, "F": 140 }
+    },
+    {
+      "id": "veg-schezwan-rice",
+      "name": "Veg Schezwan Rice",
+      "category": "rice",
+      "veg": true,
+      "signature": false,
+      "description": "Spicy and tangy Schezwan fried rice loaded with crisp garden vegetables.",
+      "image": "/images/menu/veg-schezwan-rice.jpg",
+      "prices": { "S": 80, "F": 140 }
+    },
+    {
+      "id": "veg-paneer-rice",
+      "name": "Veg Paneer Rice",
+      "category": "rice",
+      "veg": true,
+      "signature": false,
+      "description": "Fragrant fried rice loaded with golden seared paneer cubes and crunchy bell peppers.",
+      "image": "/images/menu/veg-paneer-rice.jpg",
+      "prices": { "S": 100, "F": 180 }
+    },
+    {
+      "id": "egg-fried-rice",
+      "name": "Egg Fried Rice",
+      "category": "rice",
+      "veg": false,
+      "signature": false,
+      "description": "Wok-tossed rice with golden scrambled egg ribbons and fresh green spring onions.",
+      "image": "/images/menu/egg-fried-rice.jpg",
+      "prices": { "S": 80, "F": 140 }
+    },
+    {
+      "id": "egg-manchurian-rice",
+      "name": "Egg Manchurian Rice",
+      "category": "rice",
+      "veg": false,
+      "signature": false,
+      "description": "Delicious egg fried rice accompanied by a rich savory manchurian sauce reduction.",
+      "image": "/images/menu/egg-manchurian-rice.jpg",
+      "prices": { "S": 90, "F": 160 }
+    },
+    {
+      "id": "egg-schezwan-fried-rice",
+      "name": "Egg Schezwan Fried Rice",
+      "category": "rice",
+      "veg": false,
+      "signature": false,
+      "description": "Spicy Schezwan tossed egg fried rice with aromatic peppers and chilli aromatics.",
+      "image": "/images/menu/egg-schezwan-fried-rice.jpg",
+      "prices": { "S": 90, "F": 160 }
+    },
+    {
+      "id": "chicken-fried-rice",
+      "name": "Chicken Fried Rice",
+      "category": "rice",
+      "veg": false,
+      "signature": false,
+      "description": "Satisfying fried rice tossed with tender shredded chicken, egg, and fresh scallions.",
+      "image": "/images/menu/chicken-fried-rice.jpg",
+      "prices": { "S": 90, "F": 160 }
+    },
+    {
+      "id": "chicken-schezwan-fried-rice",
+      "name": "Chicken Schezwan Fried Rice",
+      "category": "rice",
+      "veg": false,
+      "signature": false,
+      "description": "Fiery wok-tossed chicken fried rice in signature Schezwan pepper sauce.",
+      "image": "/images/menu/chicken-schezwan-fried-rice.jpg",
+      "prices": { "S": 100, "F": 170 }
+    },
+    {
+      "id": "biryani-combo",
+      "name": "Biryani Royal Combo",
+      "category": "combos",
+      "veg": false,
+      "signature": true,
+      "isCombo": true,
+      "bestValue": true,
+      "comboIncludes": ["Chicken Biryani (Full)", "2x Chicken Lollipops", "2x Chilled Cold Drinks"],
+      "description": "The ultimate treat: Full Chicken Biryani + 2 Chicken Lollipops + 2 Chilled Cold Drinks.",
+      "image": "/images/menu/biryani-combo.jpg",
+      "prices": { "F": 280 }
+    },
+    {
+      "id": "veg-combo",
+      "name": "Veg Feast Combo",
+      "category": "combos",
+      "veg": true,
+      "signature": false,
+      "isCombo": true,
+      "bestValue": true,
+      "comboIncludes": ["Veg Manchurian", "Veg Rice or Noodles", "Veg Paneer Rice", "2x Chilled Cold Drinks"],
+      "description": "Vegetarian feast: Veg Manchurian + Veg Rice or Noodles + Veg Paneer Rice + 2 Chilled Cold Drinks.",
+      "image": "/images/menu/veg-combo.jpg",
+      "prices": { "F": 229 }
+    },
+    {
+      "id": "nonveg-combo",
+      "name": "Non-Veg Deluxe Combo",
+      "category": "combos",
+      "veg": false,
+      "signature": true,
+      "isCombo": true,
+      "bestValue": true,
+      "comboIncludes": ["Chicken Manchurian", "Chicken Rice or Noodles", "Small Chicken Biryani", "2x Chilled Cold Drinks"],
+      "description": "Mega combo: Chicken Manchurian + Chicken Rice or Noodles + Small Chicken Biryani + 2 Chilled Cold Drinks.",
+      "image": "/images/menu/nonveg-combo.jpg",
+      "prices": { "F": 319 }
+    }
+  ],
+  "gallery": [
+    { "id": "gallery-1", "title": "Royal Dining Ambiance", "subtitle": "Luxury five-star experience", "image": "/images/gallery/gallery-1.jpg" },
+    { "id": "gallery-2", "title": "Live Wok Artistry", "subtitle": "High-heat authentic wok mastery", "image": "/images/gallery/gallery-2.jpg" },
+    { "id": "gallery-3", "title": "Traditional Dum Feast", "subtitle": "Slow-cooked copper handi biryani", "image": "/images/gallery/gallery-3.jpg" },
+    { "id": "gallery-4", "title": "Charcoal & Spices", "subtitle": "Freshly ground secret spice blends", "image": "/images/gallery/gallery-4.jpg" }
+  ]
+}

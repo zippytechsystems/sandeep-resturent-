@@ -1,0 +1,19 @@
+{
+  "name": "juno-kitchen-co",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Luxury Website for JUNO Kitchen & Co., Canara Nagar, Boduppal, Hyderabad",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare-images": "node scripts/prepare-images.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
